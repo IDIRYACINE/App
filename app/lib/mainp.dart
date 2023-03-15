@@ -7,17 +7,34 @@ class MainPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     int index = Random().nextInt(3);
 
     return Scaffold(
         body: Stack(
       children: [
-        Image.asset("main.png"),
-        Positioned.directional(
-            bottom: 0,
-            textDirection: TextDirection.ltr,
-            child: Image.asset("home.png"))
+        const Image(image: AssetImage("assets/main.png")),
+        const Image(image: AssetImage("assets/home.png")),
+        SizedBox(
+          width: 800,
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  MaterialButton(
+                      onPressed: () {}, child: const Text("Upload .xls")),
+                  MaterialButton(
+                    onPressed: () {},
+                    child: const Text("Download .xls"),
+                  ),
+                ],
+              ),
+              MaterialButton(
+                onPressed: () {},
+                child: const Text("ViewStats"),
+              ),
+            ],
+          ),
+        ),
       ],
     ));
   }
