@@ -1,3 +1,4 @@
+import 'package:app/scan.dart';
 import 'package:flutter/material.dart';
 
 import 'mainp.dart';
