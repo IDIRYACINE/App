@@ -6,6 +6,8 @@ class ScanPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    
     return Scaffold(
         body: CameraPreview(
       CameraController(const CameraDescription(
