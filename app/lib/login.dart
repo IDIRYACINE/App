@@ -21,8 +21,9 @@ class LoginPanel extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ConstrainedBox(
-                  constraints: const BoxConstraints(maxHeight: 200),
-                  child: const Image(image: AssetImage("assets/logo.png"))),
+                  constraints:  BoxConstraints(maxHeight: MediaQuery.of(context).size.height),
+                  child: const Image(image: AssetImage("assets/logo.png",
+                  ),)),
                 Flexible(
                   child: TextFormField(
                       decoration: const InputDecoration(labelText: "Username")),
